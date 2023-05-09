@@ -4,6 +4,13 @@ class Round
         @deck = deck
         @turns = []
     end
+    def categories
+        all_card_categories = []
+        @deck.cards.each do |card|
+            all_card_categories << card.category
+        end
+        all_card_categories.uniq
+    end
     def take_turn(guess)
         turn = Turn.new(guess, current_card)
         @turns << turn
