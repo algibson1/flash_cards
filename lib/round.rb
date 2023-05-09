@@ -38,6 +38,8 @@ class Round
         turn = take_turn(guess.chomp)
         puts turn.feedback
         end
-
+        puts "****** Game over! ******"
+        puts "You had #{@turns.count {|turn| turn.correct?}} correct guesses out of #{@deck.count} for a total score of #{percent_correct}%"
+        #(first find way to make array of categories?)
     end
 end
