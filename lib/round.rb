@@ -15,4 +15,9 @@ class Round
     def number_correct
         @turns.count {|turn| turn.correct? == true}
     end
+    def number_correct_by_category(category)
+        @turns.count do |turn|
+            turn.card.category == category && turn.correct?
+        end
+    end
 end
