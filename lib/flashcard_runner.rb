@@ -1,7 +1,7 @@
-require relative 'deck'
-require relative 'turn'
-require relative "card"
-require relative "round"
+require './deck'
+require './turn'
+require "./card"
+require "./round"
 
 card1 = Card.new("What is the capital of Delaware?", "Dover", :Geography)
 card2 = Card.new("What Mountain Range runs through Colorado?", "The Rocky Mountains", :Geography)
@@ -18,3 +18,5 @@ card11 = Card.new("What is the fastest growing plant?", "Bamboo", :STEM)
 cards = [card1, card2, card3, card4, card5, card6, card7, card8, card9, card10, card11]
 deck = Deck.new(cards)
 round = Round.new(deck)
+
+round.start

@@ -28,4 +28,16 @@ class Round
         category_total = @turns.count {|turn| turn.card.category == category}
         ((number_correct_by_category(category).to_f/category_total.to_f)*100).round(1)
     end
+    def start
+        puts "Welcome! You're playing with #{@deck.count} cards."
+        puts "-------------------------------------------------"
+        @deck.cards.each do |card|
+        puts "This is card number #{@deck.cards.index(current_card)+1} out of #{@deck.count}"
+        puts "Question: #{current_card.question}"
+        guess = gets
+        turn = take_turn(guess.chomp)
+        puts turn.feedback
+        end
+
+    end
 end
