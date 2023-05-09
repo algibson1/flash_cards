@@ -25,3 +25,5 @@ RSpec.describe Card do
     expect(card.category).to eq(:Geography)
   end
 end
+
+require "pry";binding.pry
