@@ -7,7 +7,7 @@ class CardGenerator
         cards = []
         File.open("./lib/#{filename}").each do |line|
             line = line.to_s
-            new_card = line.match /(?<question>.+)\,(?<answer>.+)\,(?<category>.+)/
+            new_card = line.match /(?<question>.+)\;(?<answer>.+)\;(?<category>.+)/
             cards.push(Card.new(new_card[:question], new_card[:answer], new_card[:category]))
         end
         cards
