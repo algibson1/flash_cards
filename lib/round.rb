@@ -47,6 +47,8 @@ class Round
         end
         puts "****** Game over! ******"
         puts "You had #{@turns.count {|turn| turn.correct?}} correct guesses out of #{@deck.count} for a total score of #{percent_correct}%"
-        #(first find way to make array of categories?)
+        categories.each do |category|
+            puts "#{category} - #{percent_correct_by_category(category)}% correct"
+        end
     end
 end
