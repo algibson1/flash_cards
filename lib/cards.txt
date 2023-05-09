@@ -1,0 +1,10 @@
+What is the capital of Delaware?,Dover,Geography
+What Mountain Range runs through Colorado?,The Rocky Mountains,Geography
+What is the name of the closest star to our sun?,Proxima Centauri,STEM
+Which planet spins sideways?,Uranus,STEM
+Which planet is home to the Galilean Moons?,Jupiter,STEM
+What year was the current American flag adopted?,1960,History
+Who was the only American president (so far) to have never married?,James Buchanan,History
+Who added the months of July and August to the calendar?,Julius Ceaser,History
+What is the world's tallest tree?,Redwood,STEM
+What is the fastest growing plant?,Bamboo,STEM
