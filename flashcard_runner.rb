@@ -1,7 +1,7 @@
-require './deck'
-require './turn'
-require "./card"
-require "./round"
+require './lib/deck'
+require './lib/turn'
+require "./lib/card"
+require "./lib/round"
 
 card1 = Card.new("What is the capital of Delaware?", "Dover", :Geography)
 card2 = Card.new("What Mountain Range runs through Colorado?", "The Rocky Mountains", :Geography)
